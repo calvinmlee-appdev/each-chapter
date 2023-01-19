@@ -5,3 +5,9 @@
 # Look in the github README file for example output
 
 p "Enter a word:"
+user_word = gets.chomp.split("")
+
+user_word.each do |i|
+  num = user_word.count(i)
+  p i + " appears " + num.to_s + " times"
+end
